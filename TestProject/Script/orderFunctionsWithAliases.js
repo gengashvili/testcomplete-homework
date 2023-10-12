@@ -1,14 +1,28 @@
-﻿function addOrder(customerName) {
+﻿let ordersView = Aliases.Orders.MainForm.OrdersView;
+let customer = Aliases.Orders.OrderForm.Group.Customer;
+let ordersForm = Aliases.Orders.OrderForm;
+
+
+function addOrder(customerName) {
   Aliases.Orders.MainForm.MainMenu.Click("Orders|New order...");
-  Aliases.Orders.OrderForm.Group.Customer.Click();
-  Aliases.Orders.OrderForm.Group.Customer.SetText(customerName);
-  Aliases.Orders.OrderForm.ButtonOK.ClickButton();
+  customer.Click();
+  customer.SetText(customerName);
+  ordersForm.ButtonOK.ClickButton();
 }
+
 
 function checkOrder(expectedName) {
-    Aliases.Orders.MainForm.OrdersView.DblClickItem(expectedName);
-    aqObject.CheckProperty(Aliases.Orders.OrderForm.Group.Customer, "wText", cmpEqual, expectedName);
-    Aliases.Orders.OrderForm.Close();
+    ordersView.DblClickItem(expectedName);
+    aqObject.CheckProperty(customer, "wText", cmpEqual, expectedName);
+    ordersForm.Close();
 }
 
-module.exports = { addOrder, checkOrder };
+
+function deleteOrder(customerName) {
+  ordersView.ClickItemR(customerName);
+  ordersView.PopupMenu.Click("Delete order");
+  Aliases.Orders.dlgConfirmation.btnYes.ClickButton();
+}
+
+
+module.exports = { addOrder, checkOrder, deleteOrder };

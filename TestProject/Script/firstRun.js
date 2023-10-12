@@ -1,14 +1,15 @@
-﻿var { openOrder, closeOrder } = require("orderFunctions");
-
-  
-function helloWorld() {
-    Log.Message("hello world!");
-}
-  
+﻿var { openOrder, closeOrder } = require("commonFunctions");
+var { addOrderByKeyWordTest } = require("orderFunctionsWithKeyWordTests");
 
 function main() {
+  
   helloWorld();
   openOrder();
-  Test1();
+  addOrderByKeyWordTest();
   closeOrder();
+  
+}
+
+function helloWorld() {
+  Log.Message("hello world!");
 }
