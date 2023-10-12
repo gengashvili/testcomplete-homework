@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
 	<children>
-		<child name="Unit1" key="{E79AA2E6-D076-46CC-A95C-4E90AE90F10C}" path="Unit1.js" />
+		<folder name="main">
+			<child name="orderFunctionsWithKeyWordTests" key="{10D460ED-4B46-4173-AA5F-805ED58C38EA}" path="orderFunctionsWithKeyWordTests.js" />
+			<child name="orderFunctionsWithAliases" key="{8CB79FC2-5E6B-4E46-BA3B-FCA158869496}" path="orderFunctionsWithAliases.js" />
+			<child name="commonFunctions" key="{8AA50A8F-C80B-4EF9-9E71-CAECD180E7E7}" path="commonFunctions.js" />
+		</folder>
+		<folder name="test">
+			<child name="firstRun" key="{8A22F301-367E-47DE-82C4-59FBA8545DEF}" path="firstRun.js" />
+			<child name="secondRun" key="{40952683-CFA1-42FB-B944-4EF7CD21EFAF}" path="secondRun.js" />
+		</folder>
+		<folder name="data">
+			<child name="orderData" key="{A6885EA4-B0EC-44D5-A79F-2F3F5ADF69AA}" path="orderData.js" />
+		</folder>
 	</children>
 </Root>

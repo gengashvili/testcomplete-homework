@@ -36,6 +36,17 @@
 												<Value Value="OrdersView" />
 											</Property>
 										</Properties>
+										<Children>
+											<Child Name="Header" Key="{A9A3C34A-F16A-4C16-A953-883BCC888CA1}">
+												<Image FileName="1605856623" Left="10" Top="81" Right="598" Bottom="105" />
+												<TypeInfo Item0="{1FFC9596-6CC8-42DE-BC19-56134B221980}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="SysHeader32" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
 									</Child>
 								</Children>
 							</Child>
@@ -435,7 +446,9 @@
 	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
 		<Child Name="Orders" Owner="{5A2E512B-11CD-4B3E-B478-C5290AEE904C}">
 			<Child Name="MainForm" Owner="{BE37CDA4-AA24-49F7-B977-4AD9B9D00715}">
-				<Child Name="OrdersView" Owner="{3802A73E-7DC4-47C0-9C00-C2C9D512DCCB}" />
+				<Child Name="OrdersView" Owner="{3802A73E-7DC4-47C0-9C00-C2C9D512DCCB}">
+					<Child Name="Header" Owner="{A9A3C34A-F16A-4C16-A953-883BCC888CA1}" />
+				</Child>
 			</Child>
 			<Child Name="OrderForm" Owner="{9EC05615-1C28-471F-BD10-6F9DC43186BE}">
 				<Child Name="Group" Owner="{EDCFB61D-D16E-43EC-BADE-9FF8719F6505}">

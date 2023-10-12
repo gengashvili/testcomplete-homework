@@ -8,7 +8,23 @@
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{3B7696E4-C02B-4198-8ACB-698F83407D4E}" version="14">
-		<children />
+		<children>
+			<testItem name="basics" key="{A0CD8D3F-9FBD-4BC2-BA9B-08A436078A08}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="firstRun" key="{D85098A2-12B4-42E4-A7C3-1954DDB796BC}" group="False" parallel="False" enabled="True" testMoniker="{8A22F301-367E-47DE-82C4-59FBA8545DEF}main" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="secondRun" key="{11ABA87E-14BE-4962-BC85-6AA1F5D41AA0}" group="False" parallel="False" enabled="True" testMoniker="{40952683-CFA1-42FB-B944-4EF7CD21EFAF}main" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+		</children>
 	</testItems>
 	<variables key="{807ECDBD-0943-4371-A22F-56B6C2B70CF1}" />
 	<settings key="{F50785E5-B7EF-4929-8078-19EF0FDFF644}">
