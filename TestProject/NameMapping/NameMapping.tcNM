@@ -75,6 +75,15 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="ProductNames" Key="{2E99229D-A380-4689-8175-33575AD3842F}">
+												<Image FileName="-1766989278" Left="75" Top="50" Right="467" Bottom="71" />
+												<TypeInfo Item0="{FF47B004-C683-4330-8301-32E70AC38ECE}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="ProductNames" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{F276AEDD-D24C-4866-B5E0-FD0D17863F83}">
@@ -335,6 +344,17 @@
 										<Value Value="WindowsForms10.Window.8.app.0.141b42a_r8_ad1" />
 									</Property>
 								</Properties>
+								<Children>
+									<Child Name="ToolBar" Key="{095C2BF7-72CF-4D5F-93D2-37AC45328BE9}">
+										<Image FileName="867707703" Left="8" Top="51" Right="600" Bottom="79" />
+										<TypeInfo Item0="{F5715C5A-0566-42EF-8D97-D85CDC8CA278}" />
+										<Properties>
+											<Property Name="WinFormsControlName">
+												<Value Value="ToolBar" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
 							</Child>
 							<Child Name="wndOrder" Key="{CE44800F-AE00-4DBF-8D42-ADE81AAD8215}">
 								<Image FileName="2105895534" Left="0" Top="0" Right="488" Bottom="478" />
@@ -367,6 +387,89 @@
 													</Property>
 													<Property Name="Index">
 														<Value Value="1" Type="0" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="ProductNames" Key="{03347DB1-D1CC-4A68-B613-D84D5F1F4544}">
+												<Image FileName="1763742686" Left="75" Top="50" Right="467" Bottom="71" />
+												<TypeInfo Item0="{6D48EB2D-B97B-48DE-8B2B-5B81B9587742}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="ProductNames" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Quantity" Key="{5503A714-F7E2-4B58-A67C-9A4CB8980CDD}">
+												<Image FileName="203604773" Left="75" Top="82" Right="131" Bottom="102" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Quantity" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="UpDownEdit" Key="{0C4479E3-58E2-4C15-BAC8-8EF2D7F6C126}">
+														<Image FileName="203604773" Left="77" Top="84" Right="113" Bottom="100" />
+														<TypeInfo Item0="{3193B40B-61E0-4DAD-9999-99D0A2B37CAA}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Forms.UpDownBase+UpDownEdit" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+											<Child Name="Price" Key="{A7709CBC-DD1D-4C7D-81E3-C700B9EDD7A1}">
+												<Image FileName="1766890810" Left="235" Top="82" Right="315" Bottom="102" />
+												<TypeInfo Item0="{3193B40B-61E0-4DAD-9999-99D0A2B37CAA}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Price" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Discount" Key="{1EB22701-4866-4E80-B76E-6BE9B078E6E8}">
+												<Image FileName="1080325689" Left="387" Top="82" Right="467" Bottom="102" />
+												<TypeInfo Item0="{3193B40B-61E0-4DAD-9999-99D0A2B37CAA}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Discount" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="groupBox1" Key="{5239DCBD-6771-44A3-8D78-F8448253ACDF}">
+												<Image FileName="-741582729" Left="323" Top="106" Right="467" Bottom="154" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="groupBox1" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="Total" Key="{400981A1-97C9-4071-B31A-73078A8B6B4A}">
+														<Image FileName="-741582729" Left="387" Top="122" Right="459" Bottom="142" />
+														<TypeInfo Item0="{3193B40B-61E0-4DAD-9999-99D0A2B37CAA}" />
+														<Properties>
+															<Property Name="WinFormsControlName">
+																<Value Value="Total" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+											<Child Name="CardNo" Key="{1EE4B5B9-FB05-42BD-9646-AE7A226F4348}">
+												<Image FileName="-1084548811" Left="115" Top="370" Right="467" Bottom="390" />
+												<TypeInfo Item0="{3193B40B-61E0-4DAD-9999-99D0A2B37CAA}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="CardNo" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="ExpDate" Key="{A53A1646-285E-4244-A8F9-0901E36651DD}">
+												<Image FileName="-613266374" Left="115" Top="402" Right="243" Bottom="422" />
+												<TypeInfo Item0="{B233412F-D19F-411E-A25E-F302273CB1D5}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="ExpDate" />
 													</Property>
 												</Properties>
 											</Child>
@@ -439,6 +542,43 @@
 							</Child>
 						</Children>
 					</Child>
+					<Child Name="ApplicationFrameHost" Key="{C81DA285-02A8-444E-85FC-1F0237D9FA62}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="ApplicationFrameHost" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndApplicationFrameWindow" Key="{B1E183BE-5F42-4780-8646-55E6DB3CFDD5}">
+								<Image FileName="1877992685" Left="-8" Top="-8" Right="1928" Bottom="1048" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="ApplicationFrameWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="530063007200650065006E00730068006F0074002000280033003800360029002E0070006E00670020000E202D002000500068006F0074006F007300" Type="7" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="brave" Key="{171D3F57-9809-411E-8F1B-36F6B5416784}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="brave" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndChrome_WidgetWin_1" Key="{61F5A4EB-9A5A-4017-ADEF-372396CEE289}">
+								<TypeInfo Item0="{64AA18D2-5F9D-4408-BC78-A93DDA42481A}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Chrome_WidgetWin_1" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
 				</Children>
 			</Child>
 		</Children>
@@ -453,6 +593,7 @@
 			<Child Name="OrderForm" Owner="{9EC05615-1C28-471F-BD10-6F9DC43186BE}">
 				<Child Name="Group" Owner="{EDCFB61D-D16E-43EC-BADE-9FF8719F6505}">
 					<Child Name="Customer" Owner="{A72743D8-9444-4BEF-8949-C9A04205E317}" />
+					<Child Name="ProductNames" Owner="{2E99229D-A380-4689-8175-33575AD3842F}" />
 				</Child>
 				<Child Name="ButtonOK" Owner="{F276AEDD-D24C-4866-B5E0-FD0D17863F83}" />
 			</Child>
@@ -486,10 +627,23 @@
 				<Child Name="btnSave" Owner="{EE503FD7-BC3D-4EE0-841D-7199AF074231}" />
 			</Child>
 			<Child Name="wnd32768" Owner="{DFF487E5-0DD9-4BCD-AF87-17D61882B9D5}" />
-			<Child Name="wndWindowsForms10Window8app0141b42ar8ad1" Owner="{143253E1-ABC8-41A9-9A84-BA52D9691DF8}" />
+			<Child Name="wndWindowsForms10Window8app0141b42ar8ad1" Owner="{143253E1-ABC8-41A9-9A84-BA52D9691DF8}">
+				<Child Name="ToolBar" Owner="{095C2BF7-72CF-4D5F-93D2-37AC45328BE9}" />
+			</Child>
 			<Child Name="wndOrder" Owner="{CE44800F-AE00-4DBF-8D42-ADE81AAD8215}">
 				<Child Name="WindowsForms10Window8app0141b42ar8ad1" Owner="{4ED35E02-9B95-4E80-93BC-D0E3FCF2C0D5}">
 					<Child Name="Item" Owner="{B7BC24C6-C7B9-4931-AF19-FAE1BF169073}" />
+					<Child Name="ProductNames" Owner="{03347DB1-D1CC-4A68-B613-D84D5F1F4544}" />
+					<Child Name="Quantity" Owner="{5503A714-F7E2-4B58-A67C-9A4CB8980CDD}">
+						<Child Name="UpDownEdit" Owner="{0C4479E3-58E2-4C15-BAC8-8EF2D7F6C126}" />
+					</Child>
+					<Child Name="Price" Owner="{A7709CBC-DD1D-4C7D-81E3-C700B9EDD7A1}" />
+					<Child Name="Discount" Owner="{1EB22701-4866-4E80-B76E-6BE9B078E6E8}" />
+					<Child Name="groupBox1" Owner="{5239DCBD-6771-44A3-8D78-F8448253ACDF}">
+						<Child Name="Total" Owner="{400981A1-97C9-4071-B31A-73078A8B6B4A}" />
+					</Child>
+					<Child Name="CardNo" Owner="{1EE4B5B9-FB05-42BD-9646-AE7A226F4348}" />
+					<Child Name="ExpDate" Owner="{A53A1646-285E-4244-A8F9-0901E36651DD}" />
 				</Child>
 				<Child Name="btnOK" Owner="{95A25024-BC11-4C8E-9944-76B798A2C7D4}" />
 			</Child>
@@ -500,6 +654,12 @@
 					</Child>
 				</Child>
 			</Child>
+		</Child>
+		<Child Name="ApplicationFrameHost" Owner="{C81DA285-02A8-444E-85FC-1F0237D9FA62}">
+			<Child Name="wndApplicationFrameWindow" Owner="{B1E183BE-5F42-4780-8646-55E6DB3CFDD5}" />
+		</Child>
+		<Child Name="brave" Owner="{171D3F57-9809-411E-8F1B-36F6B5416784}">
+			<Child Name="wndChrome_WidgetWin_1" Owner="{61F5A4EB-9A5A-4017-ADEF-372396CEE289}" />
 		</Child>
 	</LogicalNodes>
 </Root>

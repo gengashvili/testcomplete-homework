@@ -9,24 +9,44 @@
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{3B7696E4-C02B-4198-8ACB-698F83407D4E}" version="14">
 		<children>
-			<testItem name="basics" key="{A0CD8D3F-9FBD-4BC2-BA9B-08A436078A08}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="patterns" key="{87093A0B-E894-4F79-A215-6164C40F8488}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
-				<children>
-					<testItem name="firstRun" key="{D85098A2-12B4-42E4-A7C3-1954DDB796BC}" group="False" parallel="False" enabled="True" testMoniker="{8A22F301-367E-47DE-82C4-59FBA8545DEF}main" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="secondRun" key="{11ABA87E-14BE-4962-BC85-6AA1F5D41AA0}" group="False" parallel="False" enabled="True" testMoniker="{40952683-CFA1-42FB-B944-4EF7CD21EFAF}main" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
+				<children />
+			</testItem>
+			<testItem name="ProjectTestItem1" key="{335D47C6-2312-4895-BDFE-75C51B362531}" group="False" parallel="False" enabled="True" testMoniker="{27E3E21F-C731-465F-96A0-2A26F95E7679}MainRunner" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="SWT" />
+				<children />
 			</testItem>
 		</children>
 	</testItems>
-	<variables key="{807ECDBD-0943-4371-A22F-56B6C2B70CF1}" />
+	<variables key="{807ECDBD-0943-4371-A22F-56B6C2B70CF1}">
+		<data Version="4">
+			<Items>
+				<Variable Name="customerName" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:YmlsYm8gYmFnZ2lucw==" />
+				</Variable>
+				<Variable Name="customerName1" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:ZnJvZG8gYmFnZ2lucw0K" />
+				</Variable>
+				<Variable Name="customerName2" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:QXJhZ29ybg==" />
+				</Variable>
+				<Variable Name="pricePerUnit" Type="Integer" Local="False">
+					<DefValue IntValue="200" />
+				</Variable>
+				<Variable Name="discount" Type="Integer" Local="False">
+					<DefValue IntValue="200" />
+				</Variable>
+				<Variable Name="total" Type="Integer" Local="False">
+					<DefValue IntValue="200" />
+				</Variable>
+				<Variable Name="invalidDate" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:YXNkc2RzYWQ=" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
 	<settings key="{F50785E5-B7EF-4929-8078-19EF0FDFF644}">
 		<settingsVersion value="15.56" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
@@ -551,7 +571,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="2" colIndex="1">
+		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="0" colIndex="1">
 			<columns>
 				<column type="5" enabled="True" />
 				<column type="2" enabled="True" />
@@ -604,7 +624,7 @@
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
 		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
-		<setting name="Playback_StopOnError" type="1" value="True" />
+		<setting name="Playback_StopOnError" type="1" value="False" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
 		<setting name="Playback_StopOnWarning" type="1" value="False" />
 		<setting name="Playback_TestItemMaxReRunCount" type="2" value="1" />
