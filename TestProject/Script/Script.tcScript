@@ -2,16 +2,25 @@
 <Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
 	<children>
 		<folder name="main">
-			<child name="orderFunctionsWithKeyWordTests" key="{10D460ED-4B46-4173-AA5F-805ED58C38EA}" path="orderFunctionsWithKeyWordTests.js" />
-			<child name="orderFunctionsWithAliases" key="{8CB79FC2-5E6B-4E46-BA3B-FCA158869496}" path="orderFunctionsWithAliases.js" />
-			<child name="commonFunctions" key="{8AA50A8F-C80B-4EF9-9E71-CAECD180E7E7}" path="commonFunctions.js" />
+			<folder name="Common">
+				<child name="CommonFunctions" key="{8DB795C6-0362-4B1F-B88F-743FBCFC49DC}" path="CommonFunctions.js" />
+				<child name="Asserts" key="{551706F7-6B74-4978-8DA3-26174A66019D}" path="Asserts.js" />
+			</folder>
+			<folder name="Data">
+				<child name="CustomerData" key="{1CE5C2D3-17DE-4EA3-90DD-FE717529CE18}" path="CustomerData.js" />
+			</folder>
+			<folder name="Pages/steps">
+				<child name="HomePage" key="{0EE368EC-8560-447E-955B-6BF1533FE0DA}" path="HomePage.js" />
+				<child name="OrderFormPage" key="{9E3078FC-2D2A-472D-A08B-91ADD5DD2C7A}" path="OrderFormPage.js" />
+			</folder>
 		</folder>
-		<folder name="test">
-			<child name="firstRun" key="{8A22F301-367E-47DE-82C4-59FBA8545DEF}" path="firstRun.js" />
-			<child name="secondRun" key="{40952683-CFA1-42FB-B944-4EF7CD21EFAF}" path="secondRun.js" />
-		</folder>
-		<folder name="data">
-			<child name="orderData" key="{A6885EA4-B0EC-44D5-A79F-2F3F5ADF69AA}" path="orderData.js" />
+		<folder name="Test">
+			<folder name="TestCases">
+				<child name="OrderFormCases" key="{D42C642B-E85C-4F94-99D2-7DABFAB44E58}" path="OrderFormCases.js" />
+			</folder>
+			<folder name="TestRunners">
+				<child name="SecondTask" key="{27E3E21F-C731-465F-96A0-2A26F95E7679}" path="SecondTask.js" />
+			</folder>
 		</folder>
 	</children>
 </Root>

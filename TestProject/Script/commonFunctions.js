@@ -1,9 +1,9 @@
-﻿function openOrder() {
+﻿﻿function openApp() {
   TestedApps.Orders.Run();
 }
 
-function closeOrder() {
+function closeApp() {
   TestedApps.Orders.Terminate();
 }
 
-module.exports = { openOrder, closeOrder };
+module.exports = { openApp, closeApp };

@@ -5,28 +5,49 @@
 		<child name="Script" key="{067F2A94-0953-4E7C-A874-AB32FBBDDF49}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script" path="Script\Script.tcScript" />
 		<child name="KeywordTests" key="{502F06E2-A0FF-4E68-B656-810F36A98B13}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
 		<child name="TestedApps" key="{A5789BCA-7D83-4514-847A-71BC4E11D83C}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="" path="TestedApps\TestedApps.tcTAs" />
+		<child name="KeywordTests" key="{241994C5-EF48-4751-98A8-C4564EF48301}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{3B7696E4-C02B-4198-8ACB-698F83407D4E}" version="14">
 		<children>
-			<testItem name="basics" key="{A0CD8D3F-9FBD-4BC2-BA9B-08A436078A08}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="patterns" key="{87093A0B-E894-4F79-A215-6164C40F8488}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
-				<children>
-					<testItem name="firstRun" key="{D85098A2-12B4-42E4-A7C3-1954DDB796BC}" group="False" parallel="False" enabled="True" testMoniker="{8A22F301-367E-47DE-82C4-59FBA8545DEF}main" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="secondRun" key="{11ABA87E-14BE-4962-BC85-6AA1F5D41AA0}" group="False" parallel="False" enabled="True" testMoniker="{40952683-CFA1-42FB-B944-4EF7CD21EFAF}main" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
+				<children />
+			</testItem>
+			<testItem name="ProjectTestItem1" key="{335D47C6-2312-4895-BDFE-75C51B362531}" group="False" parallel="False" enabled="True" testMoniker="{27E3E21F-C731-465F-96A0-2A26F95E7679}MainRunner" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<environments activeCloud="SWT" />
+				<children />
 			</testItem>
 		</children>
 	</testItems>
-	<variables key="{807ECDBD-0943-4371-A22F-56B6C2B70CF1}" />
+	<variables key="{807ECDBD-0943-4371-A22F-56B6C2B70CF1}">
+		<data Version="4">
+			<Items>
+				<Variable Name="customerName" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:YmlsYm8gYmFnZ2lucw==" />
+				</Variable>
+				<Variable Name="customerName1" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:ZnJvZG8gYmFnZ2lucw0K" />
+				</Variable>
+				<Variable Name="customerName2" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:QXJhZ29ybg==" />
+				</Variable>
+				<Variable Name="pricePerUnit" Type="Integer" Local="False">
+					<DefValue IntValue="200" />
+				</Variable>
+				<Variable Name="discount" Type="Integer" Local="False">
+					<DefValue IntValue="200" />
+				</Variable>
+				<Variable Name="total" Type="Integer" Local="False">
+					<DefValue IntValue="200" />
+				</Variable>
+				<Variable Name="invalidDate" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:YXNkc2RzYWQ=" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
 	<settings key="{F50785E5-B7EF-4929-8078-19EF0FDFF644}">
 		<settingsVersion value="15.56" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
@@ -551,7 +572,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="2" colIndex="1">
+		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="0" colIndex="1">
 			<columns>
 				<column type="5" enabled="True" />
 				<column type="2" enabled="True" />
@@ -604,7 +625,7 @@
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
 		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
-		<setting name="Playback_StopOnError" type="1" value="True" />
+		<setting name="Playback_StopOnError" type="1" value="False" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
 		<setting name="Playback_StopOnWarning" type="1" value="False" />
 		<setting name="Playback_TestItemMaxReRunCount" type="2" value="1" />
