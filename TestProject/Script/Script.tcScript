@@ -3,23 +3,28 @@
 	<children>
 		<folder name="main">
 			<folder name="Common">
-				<child name="CommonFunctions" key="{8DB795C6-0362-4B1F-B88F-743FBCFC49DC}" path="CommonFunctions.js" />
-				<child name="Asserts" key="{551706F7-6B74-4978-8DA3-26174A66019D}" path="Asserts.js" />
+				<child name="DateUtils" key="{2643156B-1533-4A4A-8B41-5F744203F9E5}" path="DateUtils.js" />
+				<child name="ConcatSumOfDigits" key="{366B7AB2-2601-401A-90F8-59B9C6F9AB17}" path="ConcatSumOfDigits.js" />
+				<child name="AppFunctions" key="{611F733A-39FF-45B4-9622-BE18AB79C0D3}" path="AppFunctions.js" />
+				<child name="Assert" key="{CE9397D3-7311-4CD0-9CF5-F8EE3768EAFC}" path="Assert.js" />
+				<child name="StringUtils" key="{C9245954-E088-4FC4-8F30-E5BBEB5D8D7C}" path="StringUtils.js" />
+				<child name="EventsListener" key="{196B1D2B-FEBD-4876-AB27-DB8ED316DEF0}" path="EventsListener.js" />
 			</folder>
 			<folder name="Data">
-				<child name="CustomerData" key="{1CE5C2D3-17DE-4EA3-90DD-FE717529CE18}" path="CustomerData.js" />
+				<child name="FormData" key="{9A44B5D8-7923-4BFB-94F4-F3E3F50338EB}" path="FormData.js" />
+				<child name="AssertData" key="{866EB672-D28C-480D-8C7D-F6BB5656E095}" path="AssertData.js" />
 			</folder>
 			<folder name="Pages/steps">
-				<child name="HomePage" key="{0EE368EC-8560-447E-955B-6BF1533FE0DA}" path="HomePage.js" />
-				<child name="OrderFormPage" key="{9E3078FC-2D2A-472D-A08B-91ADD5DD2C7A}" path="OrderFormPage.js" />
+				<child name="HomePage" key="{F404C7DA-0C33-4521-A88C-14F309B39878}" path="HomePage.js" />
+				<child name="OrderForm" key="{20C2398B-8418-4397-8386-1E068C72C48A}" path="OrderForm.js" />
 			</folder>
 		</folder>
 		<folder name="Test">
 			<folder name="TestCases">
-				<child name="OrderFormCases" key="{D42C642B-E85C-4F94-99D2-7DABFAB44E58}" path="OrderFormCases.js" />
+				<child name="OrderFormCases" key="{D8D9E534-7415-4FC4-B14C-E6EDE2428C8B}" path="OrderFormCases.js" />
 			</folder>
 			<folder name="TestRunners">
-				<child name="SecondTask" key="{27E3E21F-C731-465F-96A0-2A26F95E7679}" path="SecondTask.js" />
+				<child name="mainRunner" key="{6BF8A69F-4AAF-4673-AEE0-77BF83696631}" path="mainRunner.js" />
 			</folder>
 		</folder>
 	</children>

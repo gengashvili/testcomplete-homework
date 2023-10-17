@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{6396AFD1-FD71-4EDA-B4FC-37DD9A3C27C6}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="0" kind="0" dateTime="45215.8852430556" objectName="Aliases.Orders.wndOrder.ButtonCancel" objectLeft="403" objectTop="442" objectRight="475" objectBottom="466" clickPointX="437" clickPointY="446" imageFileName="tcvi22469145352040.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>
