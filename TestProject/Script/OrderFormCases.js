@@ -1,115 +1,82 @@
-﻿const HomePage = require("HomePage");
-const OrderFormPage = require("OrderFormPage");
-const customer = require("CustomerData");
-const Asserts = require("Asserts");
+﻿const { openOrderForm } = require("HomePage");
+const { 
+  setCustomerName,
+  getCustomerName,
+  deleteCustomerName,
+  getStreetLabelName, 
+  setStreet,
+  getStreetValue,
+  setCity,
+  setZipCode,
+  closeOrderForm
+} = require("OrderForm");
+const { address, customerName } = require("FormData");
+const { exptectedStreetLabelName } = require("AssertData");
+const { Assert } = require("Assert");
+const { getFirstWord, getLastWord } = require("StringUtils");
 
 
-class OrderFormCases {
+const checkCustomerNameIsWritable = () => {
+  setCustomerName(customerName);
   
-  constructor() {
-    this.homePage = new HomePage();
-    this.orderFormPage = new OrderFormPage();
-    this.asserts = new Asserts();
-  }
+  let actualCustomerName = getCustomerName();
+  let expectedCustomerName = customerName;
   
-
-  addOrderFromList() {
-    this.homePage.clickAddOrderFromList();
-    this.orderFormPage.setCustomerName(customer.name);
-    this.orderFormPage.clickOnOkBtn();
-  }
-  
-
-  validateOrderAddedFromList() {
-    this.validateOrderAdded(customer.name);
-  }
-  
-
-  addOrderFromBtn() {
-    this.homePage.clickAddOrderFromBtn();
-    this.orderFormPage.setCustomerName(customer.name1);
-    this.orderFormPage.clickOnOkBtn();
-  }
-
-  validateOrderAddedFromBtn() {
-    this.validateOrderAdded(customer.name1);
-  }
-  
-  
-  validateOrderAdded(customerName) {
-    this.homePage.ordersView.DblClickItem(customerName);
-
-    this.asserts.assertEquals(
-      this.orderFormPage.customerInput.wText,
-      customerName
-    );
-
-    this.orderFormPage.ordersForm.Close();
-  }
-  
-  
-  checkProductsQuantity() {
-    this.homePage.clickAddOrderFromList();
-     
-    this.asserts.assertEquals(this.orderFormPage.productDropDown.wItemCount,3);
-    
-    this.orderFormPage.ordersForm.Close();
-  }
-  
-  
-  validateQuantityInput() {
-    this.homePage.clickAddOrderFromBtn();
-
-    try {
-        this.orderFormPage.quantityField.wValue = "letters";
-        Log.Message("Value set successfully in Quantity field.");
-    } catch (e) {
-        Log.Message(`letters cant be written in quantity (expected result) - ${e.message}`)
-        }
-        
-    this.orderFormPage.ordersForm.Close();
-  }
-  
-  
-  validatePriceInputs() {
-    this.homePage.clickAddOrderFromBtn();
-    
-    this.orderFormPage.setPrice(customer.pricePerUnit);
-    this.orderFormPage.setDiscount(customer.discount);
-    this.orderFormPage.setTotal(customer.total);
-    
-    this.orderFormPage.setCustomerName(customer.name2);
-    
-    this.orderFormPage.clickOnOkBtn();
-    
-    this.homePage.ordersView.DblClickItem(customer.name2);
-    
-    this.asserts.assertNotEquals(this.orderFormPage.priceInput.wText, customer.pricePerUnit);
-    
-    this.asserts.assertNotEquals(this.orderFormPage.discountInput.wText, customer.discount);
-    
-    this.asserts.assertNotEquals(this.orderFormPage.totalInput.wText, customer.total);
-    
-    
-     this.orderFormPage.ordersForm.Close();
-    
-  }
-  
-  
-  validateIvalidDate() {
-    this.homePage.clickAddOrderFromBtn();
-    
-    try {
-      this.orderFormPage.setDate(customer.invalidDate);
-      Log.Message("invalid date setted in date input");
-    } catch(e) {
-      Log.Message(`invalid date cant be set in date input as expected - ${e.message}`)
-    }
-    
-    this.orderFormPage.ordersForm.Close();
-  }
-  
-  
+  Assert.areEquals(actualCustomerName, expectedCustomerName, "text wrote in customer name succesfully");
 }
 
-module.exports = OrderFormCases;
+
+const checkCustomerNameIsDeletable = () => {
+  let actualCustomerName = getCustomerName();
+  
+  deleteCustomerName(actualCustomerName);
+  
+  let renewedCustomerName = getCustomerName();
+  
+  Assert.isEmpty(renewedCustomerName, "customer name deleted succesfully");
+}
+
+const checkStreetLabelName = () => {
+  let actualStreetLabelName = getStreetLabelName();
+  let expectedStreetLabelName = exptectedStreetLabelName;
+  
+  Assert.areEquals(
+    actualStreetLabelName,
+    expectedStreetLabelName,
+    `street label name is: ${actualStreetLabelName} as expected`
+    );
+}
+
+const checkStreetInputIsWritable = () => {
+  setStreet(address);
+  
+  let actualStreet = getStreetValue();
+  let expectedStreet = address;
+  
+  Assert.areEquals(actualStreet, expectedStreet, "text wrote in street succesfully");
+}
+
+
+const fillCityInput = () => {
+  let addressFromSteetValue = getStreetValue();
+  let city = getFirstWord(addressFromSteetValue);
+  
+  setCity(city);
+}
+
+const fillZipCodeInput = () => {
+  let addressFromSteetValue = getStreetValue();
+  let zipCode = getLastWord(addressFromSteetValue);
+  
+  setZipCode(zipCode);
+}
+
+
+module.exports = { 
+  checkCustomerNameIsWritable, 
+  checkCustomerNameIsDeletable, 
+  checkStreetLabelName, 
+  checkStreetInputIsWritable,
+  fillCityInput,
+  fillZipCodeInput
+};

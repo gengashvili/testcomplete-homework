@@ -5,18 +5,20 @@
 		<child name="Script" key="{067F2A94-0953-4E7C-A874-AB32FBBDDF49}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script" path="Script\Script.tcScript" />
 		<child name="KeywordTests" key="{502F06E2-A0FF-4E68-B656-810F36A98B13}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
 		<child name="TestedApps" key="{A5789BCA-7D83-4514-847A-71BC4E11D83C}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="" path="TestedApps\TestedApps.tcTAs" />
+		<child name="Events" key="{CCFC474F-CD3E-465E-A9BF-159D595234BC}" type="Events" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" pluginName="" path="Events\Events.tcAX" />
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{3B7696E4-C02B-4198-8ACB-698F83407D4E}" version="14">
 		<children>
-			<testItem name="patterns" key="{87093A0B-E894-4F79-A215-6164C40F8488}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="JS" key="{59D42B76-1D28-4B3F-A581-CB2C55E7124F}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
-				<children />
-			</testItem>
-			<testItem name="ProjectTestItem1" key="{335D47C6-2312-4895-BDFE-75C51B362531}" group="False" parallel="False" enabled="True" testMoniker="{27E3E21F-C731-465F-96A0-2A26F95E7679}MainRunner" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children />
+				<children>
+					<testItem name="mainRunner" key="{37E4DD2C-E7AA-4E57-8587-89F22BBDB289}" group="False" parallel="False" enabled="True" testMoniker="{6BF8A69F-4AAF-4673-AEE0-77BF83696631}runner" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
 			</testItem>
 		</children>
 	</testItems>

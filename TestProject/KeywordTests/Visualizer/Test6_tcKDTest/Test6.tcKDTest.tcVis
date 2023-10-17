@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{7195D39A-43F2-46F5-B7B5-1FD35544815F}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="0" kind="0" dateTime="45215.9219328704" objectName="Aliases.Orders.wndOrder.WindowsForms10Window8app0141b42ar8ad1.Street" objectLeft="115" objectTop="226" objectRight="243" objectBottom="246" clickPointX="159" clickPointY="231" imageFileName="tcvi22786176574360.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="1" kind="0" dateTime="45215.9219444444" objectName="Aliases.Orders.wndOrder.WindowsForms10Window8app0141b42ar8ad1.Street" objectLeft="115" objectTop="226" objectRight="243" objectBottom="246" clickPointX="-717" clickPointY="-282" imageFileName="tcvi22786260974361.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>
