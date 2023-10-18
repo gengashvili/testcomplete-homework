@@ -1,47 +1,53 @@
-﻿const orderForm = Aliases.Orders.OrderForm;
-const customerNameInput = orderForm.Group.Customer;
-const cancelButton = Aliases.Orders.wndOrder.ButtonCancel;
-const streetLabel = orderForm.Group.label8;
-/* 
-მოკლედ ეს სელექტორები როგორც გავტესეტე ამ WindowsForms10Window8app0141b42ar8ad1 ის გარეშე პირდაპირ არ წვდება,
-მათ შორის არც კლასების კონსტრუქტორიდან იქაც კონსტრუქტორის გარეთ მეთოდში თუ დავწერდი მხოლოდ იმ შემთხვევაშ იღებდა 
-ასეთი სინტაქსით - Aliases.Orders.OrderForm.Group.Street/City/Zip
-*/
-const inputsContainer = Aliases.Orders.wndOrder.WindowsForms10Window8app0141b42ar8ad1;
-const streetInput = inputsContainer.Street;
-const cityInput = inputsContainer.City;
-const zipCodeInput = inputsContainer.Zip;
+﻿
 
-
-const setCustomerName = (name) => customerNameInput.Keys(name);
-
-const getCustomerName = () => customerNameInput.wText;
-
-const deleteCustomerName = (name) => {
-  customerNameInput.Keys("^a[BS]");
+class OrderForm {
+  
+  constructor() {
+    this.orderForm = Aliases.Orders.OrderForm;
+    this.customerName = this.orderForm.Group.Customer;
+    this.okButton = Aliases.Orders.wndOrder.btnOK;
+    this.cancelButton = Aliases.Orders.wndOrder.ButtonCancel;
+    //this.cardButtons = Aliases.Orders.OrderForm.Group.FindAllChildren("ClrClassName", "RadioButton");
+  }
+  
+  getCardButtons() {
+    return this.orderForm.Group.FindAllChildren("ClrClassName", "RadioButton");
+  }
+  
+  setCardValue(card) {
+    this.orderForm.Group.WinFormsObject("CardNo").Keys(card);
+  }
+  
+  getCardValue() {
+    this.orderForm.Group.WinFormsObject("CardNo").Keys("^a^c");
+    return Sys.Clipboard;
+  }
+  
+  setCustomerName(name) {
+    this.customerName.Keys(name);
+  }
+  
+  getCustomerName() {
+    return this.customerName.wText;
+  }
+  
+  deleteCustomerName() {
+    this.customerName.Keys("^a[BS]");
+  }
+  
+  clickOnOkButton() {
+    this.okButton.click();
+  }
+  
+  clickOnCancelButton() {
+    this.cancelButton.click();
+  }
+  
+  
+  
 }
 
-const getStreetLabelName = () => streetLabel.WndCaption;
 
-const setStreet = (street) => streetInput.Keys(street);
+const orderForm = new OrderForm();
 
-const getStreetValue =() => streetInput.wText;
-
-const setCity = (city) => cityInput.Keys(city);
-
-const setZipCode = (zipCode) => zipCodeInput.Keys(zipCode)
-
-const closeOrderForm = () => cancelButton.Click();
-
-
-module.exports = { 
-  setCustomerName,
-  getCustomerName, 
-  closeOrderForm, 
-  deleteCustomerName,
-  getStreetLabelName,
-  getStreetValue,
-  setStreet, 
-  setCity,
-  setZipCode
-};
+module.exports = orderForm;
