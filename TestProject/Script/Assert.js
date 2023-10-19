@@ -3,9 +3,17 @@ const Assert = {
   
   areEquals: (actual, expected, succesMessage) => {
     if(actual === expected) {
-      Log.Message(actual + " and " + expected + " are equals. " + succesMessage);
+      Log.Message(succesMessage);
     } else {
      Log.Error("expected: " + expected + " but actual value is: " + actual);
+    }
+  },
+  
+  areNotEquals: (actual, expected, succesMessage) => {
+    if(actual !== expected) {
+      Log.Message(succesMessage);
+    } else {
+     Log.Error(expected + " and " + actual + " are equals!");
     }
   },
   
@@ -18,4 +26,4 @@ const Assert = {
   }
 }
 
-module.exports ={ Assert };
+module.exports = Assert ;

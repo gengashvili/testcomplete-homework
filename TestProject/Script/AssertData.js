@@ -1,4 +1,4 @@
-﻿const exptectedStreetLabelName = "Street:";
+﻿const exptectedCardButtonsCount = 3;
 
 
-module.exports = { exptectedStreetLabelName };
+module.exports = exptectedCardButtonsCount;

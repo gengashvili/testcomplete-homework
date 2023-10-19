@@ -3,15 +3,14 @@
 	<children>
 		<folder name="main">
 			<folder name="Common">
-				<child name="DateUtils" key="{2643156B-1533-4A4A-8B41-5F744203F9E5}" path="DateUtils.js" />
-				<child name="ConcatSumOfDigits" key="{366B7AB2-2601-401A-90F8-59B9C6F9AB17}" path="ConcatSumOfDigits.js" />
 				<child name="AppFunctions" key="{611F733A-39FF-45B4-9622-BE18AB79C0D3}" path="AppFunctions.js" />
 				<child name="Assert" key="{CE9397D3-7311-4CD0-9CF5-F8EE3768EAFC}" path="Assert.js" />
-				<child name="StringUtils" key="{C9245954-E088-4FC4-8F30-E5BBEB5D8D7C}" path="StringUtils.js" />
 				<child name="EventsListener" key="{196B1D2B-FEBD-4876-AB27-DB8ED316DEF0}" path="EventsListener.js" />
+				<child name="NumberUtils" key="{1836BC8E-6B11-4706-AFA1-FCC5EC8870CA}" path="NumberUtils.js" />
+				<child name="ApiFunctions" key="{2EEEA3D9-784E-496D-AC70-848E8D210724}" path="ApiFunctions.js" />
 			</folder>
 			<folder name="Data">
-				<child name="FormData" key="{9A44B5D8-7923-4BFB-94F4-F3E3F50338EB}" path="FormData.js" />
+				<child name="NewOrderData" key="{9A44B5D8-7923-4BFB-94F4-F3E3F50338EB}" path="NewOrderData.js" />
 				<child name="AssertData" key="{866EB672-D28C-480D-8C7D-F6BB5656E095}" path="AssertData.js" />
 			</folder>
 			<folder name="Pages/steps">

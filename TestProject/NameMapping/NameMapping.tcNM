@@ -93,6 +93,15 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="Visa" Key="{20F35DBC-3249-43C7-AEBB-14DD4344A42D}">
+												<Image FileName="462746857" Left="115" Top="290" Right="243" Bottom="314" />
+												<TypeInfo Item0="{61D13D6F-2A3D-4795-A026-9D7CDE6FC915}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Visa" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{F276AEDD-D24C-4866-B5E0-FD0D17863F83}">
@@ -509,6 +518,33 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="label12" Key="{3C31FFF7-4636-482B-956B-405B332C3225}">
+												<Image FileName="1390808172" Left="19" Top="295" Right="52" Bottom="312" />
+												<TypeInfo Item0="{B868EF7D-FDB0-4BBF-B150-453F01588F9C}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="label12" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="MasterCard" Key="{719D1982-B552-46F7-8597-58D639C6CB54}">
+												<Image FileName="-214796566" Left="115" Top="314" Right="243" Bottom="338" />
+												<TypeInfo Item0="{C7E3907D-939F-4580-8006-60EF8C98F9D8}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="MasterCard" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="AE" Key="{1A47B805-0AF1-4674-B293-3E7928F75D58}">
+												<Image FileName="2075861993" Left="115" Top="338" Right="243" Bottom="362" />
+												<TypeInfo Item0="{C7E3907D-939F-4580-8006-60EF8C98F9D8}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="AE" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="btnOK" Key="{95A25024-BC11-4C8E-9944-76B798A2C7D4}">
@@ -640,6 +676,7 @@
 					<Child Name="Customer" Owner="{A72743D8-9444-4BEF-8949-C9A04205E317}" />
 					<Child Name="ProductNames" Owner="{2E99229D-A380-4689-8175-33575AD3842F}" />
 					<Child Name="label8" Owner="{708E3340-2605-4B7A-AF08-F080F4CD5A61}" />
+					<Child Name="Visa" Owner="{20F35DBC-3249-43C7-AEBB-14DD4344A42D}" />
 				</Child>
 				<Child Name="ButtonOK" Owner="{F276AEDD-D24C-4866-B5E0-FD0D17863F83}" />
 			</Child>
@@ -693,6 +730,9 @@
 					<Child Name="Street" Owner="{6278AB7C-0AA6-426E-8751-E495917954DB}" />
 					<Child Name="City" Owner="{F3F6A481-397D-4380-ADCF-00993A2E75EE}" />
 					<Child Name="Zip" Owner="{B7BA0E6F-213F-4030-BA56-6B7DF23B7495}" />
+					<Child Name="label12" Owner="{3C31FFF7-4636-482B-956B-405B332C3225}" />
+					<Child Name="MasterCard" Owner="{719D1982-B552-46F7-8597-58D639C6CB54}" />
+					<Child Name="AE" Owner="{1A47B805-0AF1-4674-B293-3E7928F75D58}" />
 				</Child>
 				<Child Name="btnOK" Owner="{95A25024-BC11-4C8E-9944-76B798A2C7D4}" />
 				<Child Name="ButtonCancel" Owner="{F79AFF41-DFA2-44EE-8A1A-7FE20C429398}" />

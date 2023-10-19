@@ -1,82 +1,71 @@
-﻿const { openOrderForm } = require("HomePage");
-const { 
-  setCustomerName,
-  getCustomerName,
-  deleteCustomerName,
-  getStreetLabelName, 
-  setStreet,
-  getStreetValue,
-  setCity,
-  setZipCode,
-  closeOrderForm
-} = require("OrderForm");
-const { address, customerName } = require("FormData");
-const { exptectedStreetLabelName } = require("AssertData");
-const { Assert } = require("Assert");
-const { getFirstWord, getLastWord } = require("StringUtils");
+﻿const homePage = require("HomePage");
+const orderForm = require("orderForm");
+const getRandomNumber = require("NumberUtils");
+const NewOrderData = require("NewOrderData");
+const Assert = require("Assert");
+const exptectedCardButtonsCount = require("AssertData");
+const httpGetRequest = require("ApiFunctions");
 
 
-const checkCustomerNameIsWritable = () => {
-  setCustomerName(customerName);
+const checkCardButtonsCount = () => {
+  homePage.openOrderForm();
+  let buttons = orderForm.getCardButtons();
+  Assert.areEquals(buttons.length,exptectedCardButtonsCount,"there are 3 card buttons as expected");
+  orderForm.clickOnCancelButton();
+};
+
+
+const fillCardNumberAndLogIt = () => {
+  homePage.openOrderForm();
+  orderForm.setCardValue(getRandomNumber());
+  Log.Message(orderForm.getCardValue());
+  orderForm.clickOnCancelButton();
+};
+
+const addNewOrder = () => {
+  homePage.openOrderForm();
+  orderForm.setCustomerName(NewOrderData.customerName);
+  orderForm.clickOnOkButton();
+};
+
+
+const checkThatOrderIsEditable = () => {
+  let addedOrderName = NewOrderData.customerName;
+  let newName = NewOrderData.newCustomerName;
   
-  let actualCustomerName = getCustomerName();
-  let expectedCustomerName = customerName;
+  homePage.openAddedOrder(addedOrderName);
+  orderForm.setCustomerName(newName);
+  orderForm.clickOnOkButton();
+  homePage.openAddedOrder(newName);
   
-  Assert.areEquals(actualCustomerName, expectedCustomerName, "text wrote in customer name succesfully");
+  Assert.areEquals(newName, orderForm.getCustomerName(), "order edited successfully");
+  
+  orderForm.clickOnCancelButton();
+};
+
+
+const setKeyFromApiData = () => {
+  let result = httpGetRequest(Project.Variables.BASEURL);
+  
+  homePage.openAddedOrder(NewOrderData.newCustomerName);
+  orderForm.setCardValue(result.key);
+  orderForm.clickOnOkButton();
 }
 
-
-const checkCustomerNameIsDeletable = () => {
-  let actualCustomerName = getCustomerName();
+const setCustomerNameFromApiData = () => {
+  let result = httpGetRequest(Project.Variables.BASEURL + "?type=music");
   
-  deleteCustomerName(actualCustomerName);
-  
-  let renewedCustomerName = getCustomerName();
-  
-  Assert.isEmpty(renewedCustomerName, "customer name deleted succesfully");
-}
-
-const checkStreetLabelName = () => {
-  let actualStreetLabelName = getStreetLabelName();
-  let expectedStreetLabelName = exptectedStreetLabelName;
-  
-  Assert.areEquals(
-    actualStreetLabelName,
-    expectedStreetLabelName,
-    `street label name is: ${actualStreetLabelName} as expected`
-    );
-}
-
-const checkStreetInputIsWritable = () => {
-  setStreet(address);
-  
-  let actualStreet = getStreetValue();
-  let expectedStreet = address;
-  
-  Assert.areEquals(actualStreet, expectedStreet, "text wrote in street succesfully");
-}
-
-
-const fillCityInput = () => {
-  let addressFromSteetValue = getStreetValue();
-  let city = getFirstWord(addressFromSteetValue);
-  
-  setCity(city);
-}
-
-const fillZipCodeInput = () => {
-  let addressFromSteetValue = getStreetValue();
-  let zipCode = getLastWord(addressFromSteetValue);
-  
-  setZipCode(zipCode);
+  homePage.openAddedOrder(NewOrderData.newCustomerName);
+  orderForm.setCustomerName(result.activity);
+  orderForm.clickOnOkButton();
 }
 
 
 module.exports = { 
-  checkCustomerNameIsWritable, 
-  checkCustomerNameIsDeletable, 
-  checkStreetLabelName, 
-  checkStreetInputIsWritable,
-  fillCityInput,
-  fillZipCodeInput
+  checkCardButtonsCount,
+  fillCardNumberAndLogIt,
+  addNewOrder,
+  checkThatOrderIsEditable,
+  setKeyFromApiData,
+  setCustomerNameFromApiData
 };

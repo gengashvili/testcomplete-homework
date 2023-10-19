@@ -6,11 +6,12 @@
 		<child name="KeywordTests" key="{502F06E2-A0FF-4E68-B656-810F36A98B13}" type="Keyword Testing" typeId="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" pluginName="Keyword Testing" path="KeywordTests\KeywordTests.tcKDT" />
 		<child name="TestedApps" key="{A5789BCA-7D83-4514-847A-71BC4E11D83C}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" pluginName="" path="TestedApps\TestedApps.tcTAs" />
 		<child name="Events" key="{CCFC474F-CD3E-465E-A9BF-159D595234BC}" type="Events" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" pluginName="" path="Events\Events.tcAX" />
+		<child name="Stores" key="{500E0319-3FB2-4922-BE26-189671B971B0}" type="Stores" typeId="{5238AF17-5FE2-48FF-8BCC-9803A975A4F4}" pluginName="Stores" path="Stores\Stores.tcStores" />
 	</children>
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{3B7696E4-C02B-4198-8ACB-698F83407D4E}" version="14">
 		<children>
-			<testItem name="JS" key="{59D42B76-1D28-4B3F-A581-CB2C55E7124F}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="api" key="{59D42B76-1D28-4B3F-A581-CB2C55E7124F}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
 					<testItem name="mainRunner" key="{37E4DD2C-E7AA-4E57-8587-89F22BBDB289}" group="False" parallel="False" enabled="True" testMoniker="{6BF8A69F-4AAF-4673-AEE0-77BF83696631}runner" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -25,26 +26,8 @@
 	<variables key="{807ECDBD-0943-4371-A22F-56B6C2B70CF1}">
 		<data Version="4">
 			<Items>
-				<Variable Name="customerName" Type="String" Local="False">
-					<DefValue StrValue=".??B64??.:YmlsYm8gYmFnZ2lucw==" />
-				</Variable>
-				<Variable Name="customerName1" Type="String" Local="False">
-					<DefValue StrValue=".??B64??.:ZnJvZG8gYmFnZ2lucw0K" />
-				</Variable>
-				<Variable Name="customerName2" Type="String" Local="False">
-					<DefValue StrValue=".??B64??.:QXJhZ29ybg==" />
-				</Variable>
-				<Variable Name="pricePerUnit" Type="Integer" Local="False">
-					<DefValue IntValue="200" />
-				</Variable>
-				<Variable Name="discount" Type="Integer" Local="False">
-					<DefValue IntValue="200" />
-				</Variable>
-				<Variable Name="total" Type="Integer" Local="False">
-					<DefValue IntValue="200" />
-				</Variable>
-				<Variable Name="invalidDate" Type="String" Local="False">
-					<DefValue StrValue=".??B64??.:YXNkc2RzYWQ=" />
+				<Variable Name="BASEURL" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:aHR0cHM6Ly93d3cuYm9yZWRhcGkuY29tL2FwaS9hY3Rpdml0eQ==" />
 				</Variable>
 			</Items>
 		</data>
@@ -265,7 +248,7 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_HybridMobile_AccessPolicy" type="1" value="False" />
-		<setting name="OpenApps_HybridMobile_DynamicIdentifiers" type="6" rowIndex="37" colIndex="9">
+		<setting name="OpenApps_HybridMobile_DynamicIdentifiers" type="6" rowIndex="37" colIndex="4">
 			<columns>
 				<column type="2" enabled="True" />
 				<column type="2" enabled="True" />
@@ -610,7 +593,7 @@
 		<setting name="Playback_ErrHandling_ShowErrorDialog" type="1" value="True" />
 		<setting name="Playback_Log_AutosaveInterval" type="2" value="0" />
 		<setting name="Playback_Log_EventCount" type="2" value="0" />
-		<setting name="Playback_Log_PostImageOnError" type="1" value="True" />
+		<setting name="Playback_Log_PostImageOnError" type="1" value="False" />
 		<setting name="Playback_ObjectSearchStrategy" type="6" rowIndex="1" colIndex="0">
 			<columns>
 				<column type="5" enabled="True" />

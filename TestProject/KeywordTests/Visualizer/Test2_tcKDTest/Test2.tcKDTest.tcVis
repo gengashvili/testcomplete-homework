@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
-	<data key="{00BA665D-328A-421C-8EAB-3AC40267F605}">
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="0" kind="0" dateTime="45214.842037037" objectName="Aliases.Orders.OrderForm.Group.Customer" objectLeft="115" objectTop="194" objectRight="467" objectBottom="214" clickPointX="150" clickPointY="199" imageFileName="tcvi13455873439280.png" storageFileName="" needUpdate="False" rectColor="255" />
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="1" kind="0" dateTime="45214.8420833333" objectName="Aliases.Orders.OrderForm.Group.Customer" objectLeft="115" objectTop="194" objectRight="467" objectBottom="214" clickPointX="-717" clickPointY="-282" imageFileName="tcvi13455995339281.png" storageFileName="" needUpdate="False" rectColor="255" />
+	<data key="{C5F5D0C1-7EC9-43B9-A982-D1530C51FEF4}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="0" kind="0" dateTime="45216.8902662037" objectName="Aliases.Orders.MainForm.OrdersView" objectLeft="8" objectTop="79" objectRight="600" objectBottom="378" clickPointX="36" clickPointY="111" imageFileName="tcvi651032810640.png" storageFileName="" needUpdate="False" rectColor="255" />
 	</data>
 </Root>
